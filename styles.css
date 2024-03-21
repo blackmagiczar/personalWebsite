@@ -1,0 +1,103 @@
+header {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg: rgb(23, 0, 39);
+  --text: rgb(147, 223, 223);
+}
+* {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+nav a {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-decoration: none;
+  height: fit-content;
+}
+nav a:hover {
+  border-left: 2px solid wheat;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#aboutMe {
+  width: 40vw;
+  height: fit-content;
+  padding: 2rem;
+}
+#skills {
+  display: flex;
+  justify-content: space-between;
+  width: 45vw;
+}
+#portfolio {
+  width: 45vw;
+  margin: 1rem;
+}
+.fa-brands {
+  font-size: 100px;
+  color: var(--text);
+  margin: 1rem;
+}
+#htmlHide {
+  display: none;
+}
+#skills :nth-child(1):hover {
+  display: inline;
+  color: rgb(255, 51, 0);
+}
+#skills :nth-child(1):hover + #htmlHide {
+  font-size: 1rem;
+  position: absolute;
+  top: 68vh;
+  left: 2vw;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+#skills :nth-child(2):hover {
+  color: rgb(0, 162, 255);
+}
+#skills :nth-child(3):hover {
+  color: rgb(255, 208, 0);
+}
+#skills :nth-child(4):hover {
+  color: rgb(255, 255, 255);
+}
+#portfolio #portfolio-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+span p {
+  margin: 0px 2rem 0rem 0rem;
+  padding: 0;
+  max-width: 1rem;
+}
+#education p {
+  color: white;
+  font-size: 1.5rem;
+}
+span a {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-decoration: none;
+  height: fit-content;
+}
+footer {
+  text-align: center;
+}
