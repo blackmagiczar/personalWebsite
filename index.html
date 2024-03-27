@@ -32,7 +32,7 @@
     </header>
     <main>
       <section id="about">
-        <p id="aboutMe">
+        <p id="aboutMe" onmouseenter="animateAbout()">
           Hello there, My name is Siboniso Innocent Malapane. <br />
           I am an aspiring web developer with a strong desire to succeed in the
           industry. Although I may not have much experience yet, I am committed
@@ -43,12 +43,12 @@
       </section>
       <section id="education">
         <p>Education and Certifications</p>
-        <ul>
-          Umuzi Academy
+        <ul id="umuzi">
+          <p>Umuzi Academy</p>
           <li>March 2024 - Present</li>
         </ul>
         <ul id="freecode">
-          FreeCodeCamp
+          <p>FreeCodeCamp</p>
           <li>Dec 2023</li>
           <li>Responsive Web Design</li>
 
@@ -58,22 +58,21 @@
           >
         </ul>
         <ul id="UP">
-          University of Pretoria
+          <p>University of Pretoria</p>
           <li>Feb 2016 - Incomplete</li>
           <li>Bsc Computer Science</li>
         </ul>
         <ul id="matric">
-          Highveld Secondary School
+          <p>Highveld Secondary School</p>
           <li>Dec 2015</li>
           <li>Matric Certificate</li>
         </ul>
       </section>
       <section id="skills">
-        <i class="fa-brands fa-html5"></i>
-        <p id="htmlHide">HTML5</p>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-git"></i>
+        <i class="fa-brands fa-html5"><p class="skill-text">HTML5</p></i>
+        <i class="fa-brands fa-css3-alt"><p class="skill-text">CSS3</p></i>
+        <i class="fa-brands fa-js"><p class="skill-text">JavaScript</p></i>
+        <i class="fa-brands fa-git"><p class="skill-text">Git</p></i>
       </section>
       <section id="portfolio">
         <span id="portfolio-head">
@@ -84,7 +83,7 @@
         </span>
         <iframe
           src="https://blackmagiczar.github.io/hazyimages/"
-          width="700px"
+          width="100%"
           height="400px"
           frameborder="0"
         ></iframe>
