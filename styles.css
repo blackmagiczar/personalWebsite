@@ -23,7 +23,6 @@ body {
   background-color: var(--bg);
   color: var(--text);
   max-width: 100%;
-  margin: 1rem;
 }
 section {
   box-shadow: 2px 2px 5px black;
@@ -35,9 +34,6 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-}
-.skill-text {
-  font-size: 1rem;
 }
 #education {
   padding: 2rem;
@@ -55,17 +51,23 @@ main {
   color: var(--text);
   margin: 1rem;
 }
-#skills :nth-child(1):hover {
+.fa-html5:hover {
   color: rgb(255, 51, 0);
 }
-#skills :nth-child(2):hover {
+.fa-css3-alt:hover {
   color: rgb(0, 162, 255);
 }
-#skills :nth-child(3):hover {
+.fa-js:hover {
   color: rgb(255, 208, 0);
 }
-#skills :nth-child(4):hover {
+.fa-git:hover {
   color: rgb(255, 255, 255);
+}
+.skill-text {
+  font-size: 1rem;
+}
+.skill-text:hover {
+  color: var(--text);
 }
 #portfolio #portfolio-head {
   display: flex;
@@ -75,7 +77,6 @@ main {
 span p {
   margin: 0px 2rem 0rem 0rem;
   padding: 0;
-  max-width: 1rem;
 }
 #education p {
   color: white;
@@ -90,6 +91,7 @@ span a {
 footer {
   text-align: center;
 }
+
 nav a {
   color: rgb(255, 255, 255);
   font-weight: 800;
@@ -108,6 +110,17 @@ ul {
 #UP p,
 #matric p {
   color: rgb(0, 87, 128);
+}
+header {
+  margin-bottom: 2rem;
+  border: 2px solid transparent;
+}
+#navBar {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  background-color: var(--bg);
+  box-shadow: 2px 2px 5px black;
 }
 @media screen and (min-width: 700px) {
   main {

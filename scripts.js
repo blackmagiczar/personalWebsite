@@ -1,4 +1,4 @@
-let text = `Hello there, My name is Siboniso Innocent Malapane.\n I am an aspiring web developer with a strong desire to succeed in the industry. Although I may not have much experience yet, I am committed to working hard and I am confident that my passion and drive will help me excel in this field. With every project I work on, I strive to learn something new and improve my abilities.`;
+let text = `Hello there, My name is Siboniso Innocent Malapane.\n I am an aspiring web developer with a strong desire to succeed in the industry. Although I may not have much experience yet, I am committed to working hard, and I am confident that my passion and drive will help me excel in this field. With every project I work on, I strive to learn something new and improve my abilities.`;
 function animateAbout() {
   let about = document.getElementById("aboutMe");
 
