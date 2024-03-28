@@ -122,7 +122,22 @@ header {
   background-color: var(--bg);
   box-shadow: 2px 2px 5px black;
 }
+#cv {
+  background-color: var(--text);
+  color: var(--bg);
+  font-weight: 800;
+  padding: 0px;
+}
 @media screen and (min-width: 700px) {
+  #cv {
+    background-color: var(--text);
+    color: var(--bg);
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    position: relative;
+    bottom: 1.5rem;
+  }
   main {
     display: grid;
     grid-template-columns: auto auto;
