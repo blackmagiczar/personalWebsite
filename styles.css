@@ -15,9 +15,13 @@ header {
   padding: 0;
   max-width: 100%;
 }
+
 a {
   color: white;
   text-decoration: none;
+}
+#webCert:hover {
+  color: rgb(0, 87, 128);
 }
 body {
   background-color: var(--bg);
@@ -29,7 +33,9 @@ section {
   margin: 1rem 0px;
   padding: 1rem;
 }
-
+#about {
+  padding-top: 3rem;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -37,6 +43,10 @@ main {
 }
 #education {
   padding: 2rem;
+  padding-top: 3rem;
+}
+#skillsContainer {
+  padding-top: 3rem;
 }
 #skills {
   display: flex;
@@ -45,6 +55,7 @@ main {
 }
 #portfolio {
   margin: 1rem;
+  padding-top: 3rem;
 }
 .fa-brands {
   font-size: 1rem;
@@ -83,7 +94,7 @@ nav a {
   font-weight: 800;
   text-decoration: none;
   height: fit-content;
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
 }
 nav a:hover {
   border-bottom: 2px solid wheat;
@@ -107,6 +118,7 @@ header {
   top: 0px;
   background-color: var(--bg);
   box-shadow: 2px 2px 5px black;
+  width: 100%;
 }
 #cv {
   background-color: var(--text);
@@ -114,7 +126,24 @@ header {
   font-weight: 800;
   padding: 0px;
 }
+#navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+#navigation a {
+  font-size: 0.8rem;
+}
+#portfolio {
+  min-height: max-content;
+}
+header {
+  width: 100vw;
+}
+
 @media screen and (min-width: 700px) {
+  #navigation a {
+    font-size: 1.5rem;
+  }
   #cv {
     background-color: var(--text);
     color: var(--bg);
@@ -124,6 +153,7 @@ header {
     position: relative;
     bottom: 1.5rem;
   }
+
   main {
     display: grid;
     grid-template-columns: auto auto;
@@ -142,11 +172,22 @@ header {
     margin: 1rem;
   }
 }
-#portfolio {
-  min-height: max-content;
-}
+
 @media screen and (min-width: 1000px) {
+  #navigation a {
+    font-size: 1.9rem;
+  }
   #aboutMe {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  #navigation {
+    text-wrap: nowrap;
+  }
+  #navigation a {
+    margin: 0rem;
+    padding: 0rem 0.2rem;
+    font-size: 0.8rem;
   }
 }
